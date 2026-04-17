@@ -104,7 +104,6 @@ function maskUsername(username) {
   return chars.join('');
 }
 
-// Ketentuan 3: daftar pemenang per hadiah, nama di-mask acak
 async function getWinnersPerPrize() {
   const [prizes, winnerLogs] = await Promise.all([
     gachaRepository.getAllPrizes(),
