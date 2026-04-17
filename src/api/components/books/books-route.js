@@ -12,11 +12,4 @@ module.exports = (app) => {
 
   // Create a new book
   route.post('/', booksController.createBook);
-
-  // TODO: Get a book by id
-  route.get('/:id', booksController.getBookById);
-  // TODO: Update a book by id
-  route.put('/:id', booksController.updateBook);
-  // TODO: Delete a book by id
-  route.delete('/:id', booksController.deleteBook);
 };
